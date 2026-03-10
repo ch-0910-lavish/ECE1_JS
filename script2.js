@@ -1,5 +1,5 @@
 
-var a=100; var b=13; var c=10; var linebreak="<br>";
+var a=100; var b=20; var c=10; var linebreak="<br>";
 
 console.log("a+b+c=");
 result=a+b+c;
