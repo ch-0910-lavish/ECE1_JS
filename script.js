@@ -1,6 +1,6 @@
 console.log("Hello World");
 
-var num = 10;
+var num = 15;
 console.log(num);
 console.log(typeof(num));
 
