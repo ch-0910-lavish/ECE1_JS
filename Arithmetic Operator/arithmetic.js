@@ -1,0 +1,27 @@
+
+var a=100; var b=20; var c=10; var linebreak="<br>";
+
+console.log("a+b+c=");
+result=a+b+c;
+console.log(result);
+console.log(linebreak);
+
+console.log("a+b=");
+result=a+b;
+console.log(result);
+console.log(linebreak);
+
+console.log("a-b=");
+result=a-b;
+console.log(result);
+console.log(linebreak);
+
+console.log("a/b=");
+result=a/b;
+console.log(result);
+console.log(linebreak);
+
+console.log("a%b=");
+result=a%b;
+console.log(result);
+console.log(linebreak);
