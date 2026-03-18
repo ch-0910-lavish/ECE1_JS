@@ -8,13 +8,13 @@ function calculateResult(){
     }
         let average = total/n;
         let grade;
-        if(average >= 80){
+        if(average >= 80.0){
             grade = "A";
-        }else if(average >= 65){
+        }else if(average >= 65.0){
             grade = "B";
-        }else if(average >= 50){
+        }else if(average >= 50.0){
             grade = "C";
-        }else if(average >= 35){
+        }else if(average >= 35.0){
             grade = "D";
         }else{
             grade = "F";
