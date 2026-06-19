@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown Timer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.container:hover{
+    transform:translateY(-5px);
+}
+
+h1{
+    color:#2c3e50;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:2px solid #3498db;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#2ecc71;
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#e74c3c;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Countdown Timer</h1>
+
+    <input type="number" id="num" placeholder="Enter Number">
+
+    <button onclick="countdown()">Start Countdown</button>
+
+    <p id="result"></p>
+
+</div>
+
+<script>
+
+function countdown()
+{
+    let n = parseInt(document.getElementById("num").value);
+
+    let output = "";
+
+    for(let i=n;i>=1;i--)
+    {
+        output += i + "<br>";
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+
+</script>
+
+</body>
+</html>
